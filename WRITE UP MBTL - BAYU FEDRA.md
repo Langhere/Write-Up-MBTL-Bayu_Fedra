@@ -183,9 +183,8 @@ What do you think after see the code ?, yes if you has do review the code before
 | ------------ | -------------------------------- |
 | Affected URL | http://127.0.0.1/detail.php?id=1 |
 | Vuln         | SQL INJECTION                    |
-| CVE          | coding                           |
-| CWE          |                                  |
-| CVSS         |                                  |
+| CWE          | CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') |                                 |
+
 
 POC
 1. Confirm the SQL INJECTION is Valid, base url http://127.0.0.1/detail.php?id=1, try to add http://127.0.0.1/detail.php?id=1 AND 1=1, and see the below
